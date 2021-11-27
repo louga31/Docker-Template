@@ -12,7 +12,7 @@ services:
             - ./data:container_path               #TODO: Fill in the volume format: host_path:container_path (ex: ./data:/factorio)
         environment:
             - name=value                          #TODO: Fill in the environment variable format: name=value (ex: UPDATE_MODS_ON_START=false) 
-        # networks:                                #Uncomment if you want to connect through the proxy (ie. if you are using the domain name) (port 80 or 443)
+        # networks:                               #Uncomment if you want to connect through the proxy (ie. if you are using the domain name) (port 80 or 443)
         #     - proxy
 
 # networks:
