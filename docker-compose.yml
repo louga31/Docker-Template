@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+    name:                                         #TODO: Fill in the container name(ex: factorio) in lowercase
+        image: image_name                         #TODO: Fill in the image name(ex: factoriotools/factorio:1.1.38) (version is optional)
+        container_name: CONTAINER_NAME            #TODO: Fill in the container name(ex: Factorio) in CamelCase
+        restart: unless-stopped
+        stdin_open: true # docker run -i
+        tty: true        # docker run -t
+        ports:
+            - "host_port:container_port/protocol" #TODO: Fill in the port (ex: 7212:80/tcp)
+        volumes:
+            - ./data:container_path               #TODO: Fill in the volume format: host_path:container_path (ex: ./data:/factorio)
+        environment:
+            - name=value                          #TODO: Fill in the environment variable format: name=value (ex: UPDATE_MODS_ON_START=false) 
+        # networks:                                #Uncomment if you want to connect through the proxy (ie. if you are using the domain name) (port 80 or 443)
+        #     - proxy
+
+# networks:
+#   proxy_local:
+#     external: true
