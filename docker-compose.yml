@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3'
 services:
     name:                                         #TODO: Fill in the container name(ex: factorio) in lowercase
         image: image_name                         #TODO: Fill in the image name(ex: factoriotools/factorio:1.1.38) (version is optional)
